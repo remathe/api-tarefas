@@ -16,6 +16,7 @@ Este projeto é uma **API RESTful** construída com **Node.js + Express + MongoD
 # 📁 Estrutura do Projeto
 
 ```
+node_modules/
 api-tarefas/
 ├── server.js
 ├── package.json
@@ -88,7 +89,7 @@ As rotas de escrita (POST, PUT, DELETE) exigem **token JWT**.
 
 Enviar no header:
 ```
-Authorization: Bearer SEU_TOKEN
+Authorization: Bearer (SEU_TOKEN) <--- cole seu token aqui !
 ```
 
 ---
@@ -101,8 +102,8 @@ Authorization: Bearer SEU_TOKEN
 **POST /auth/register**
 ```json
 {
-  "email": "teste@gmail.com",
-  "password": "123456"
+  "email": "matheus@gmail.com",
+  "password": "123"
 }
 ```
 
@@ -110,14 +111,14 @@ Authorization: Bearer SEU_TOKEN
 **POST /auth/login**
 ```json
 {
-  "email": "teste@gmail.com",
-  "password": "123456"
+  "email": "matheus@gmail.com",
+  "password": "123"
 }
 ```
 **Resposta**:
 ```json
 {
-  "token": "eyJh..."
+  "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5MjllMDEwYzhmNjNjNDQ2ZTI0N2VjMyIsImlhdCI6MTc2NDM1MjA0NiwiZXhwIjoxNzY0NDM4NDQ2fQ.bCoxvLdQKOszfSruPckrq2L_Qrff6CQZf5peM6lytZ0"
 }
 ```
 
@@ -181,18 +182,32 @@ PASS  tests/basic.test.js
 ---
 
 # 👥 Integrantes do Grupo
-- Nome 1 — Função
-- Nome 2 — Função
-- Nome 3 — Função
 
-*(Edite com seus nomes reais)*
+-Matheus Soares da Costa — Desenvolvedor Full Stack
 
 ---
 
 # 📌 Divisão de Tarefas
-- Fulano — Controllers / Models
-- Ciclano — Rotas / Swagger
-- Beltrano — Testes / README / Issues
+
+Matheus Soares da Costa -->
+
+✔ Planejamento da API
+
+✔ Configuração do ambiente (Node.js, Express e MongoDB)
+
+✔ Desenvolvimento do servidor e estrutura MVC
+
+✔ Implementação do CRUD de tarefas
+
+✔ Implementação de autenticação JWT
+
+✔ Criação da documentação com Swagger
+
+✔ Desenvolvimento dos testes com Jest e Supertest
+
+✔ Montagem do README
+
+✔ Organização do repositório e versionamento com Git
 
 ---
 
@@ -216,11 +231,3 @@ Este projeto entrega **todos os requisitos solicitados**, incluindo:
 ✔ README completo
 ✔ Arquitetura organizada
 ✔ Banco conectado
-
----
-
-Se quiser, posso gerar também:
-✅ TEMPLATE de Issue
-✅ TEMPLATE de Pull Request
-✅ Commits padrões
-
